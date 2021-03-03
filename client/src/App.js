@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
+import Nav from "./comp/Nav";
 
 function App() {
   return (
@@ -8,14 +9,11 @@ function App() {
       <div>
         <Nav />
         <Switch>
-          <Route exact path={["/", "/"]}>
-            <Boo />
+          <Route exact path="/">
+            {/* <LogIn /> */}
           </Route>
           <Route exact path="/users/:id">
-            <Detail />
-          </Route>
-          <Route>
-            <NoMatch />
+            {/* <Search /> */}
           </Route>
         </Switch>
       </div>
