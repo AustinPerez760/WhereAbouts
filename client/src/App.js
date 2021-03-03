@@ -4,23 +4,22 @@ import "./App.css";
 
 function App() {
   return (
-    <h1>hi</h1>
-    // <Router>
-    //   <div>
-    //     <Nav />
-    //     <Switch>
-    //       <Route exact path={["/", "/"]}>
-    //         <Boo />
-    //       </Route>
-    //       <Route exact path="/users/:id">
-    //         <Detail />
-    //       </Route>
-    //       <Route>
-    //         <NoMatch />
-    //       </Route>
-    //     </Switch>
-    //   </div>
-    // </Router>
+    <Router>
+      <div>
+        <Nav />
+        <Switch>
+          <Route exact path={["/", "/"]}>
+            <Boo />
+          </Route>
+          <Route exact path="/users/:id">
+            <Detail />
+          </Route>
+          <Route>
+            <NoMatch />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 export default App;
