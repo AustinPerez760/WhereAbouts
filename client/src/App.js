@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
-import Nav from "./comp/Nav";
+import TopBar from "./comp/TopBar";
 import LogIn from "./comp/LogIn";
 
 function App() {
   return (
     <Router>
       <div>
-        <Nav />
+        <TopBar />
         <Switch>
           <Route exact path="/">
             <LogIn />

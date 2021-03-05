@@ -2,8 +2,8 @@ import React from "react";
 
 function LogIn() {
   return (
-    <div class="card">
-      <h1>POOP</h1>
+    <div className="card">
+      <h1>TEST</h1>
       {/* <img src="..." class="card-img-top" alt="..."> */}
       {/* <div class="card-body">
               <h5 class="card-title">Card title</h5>
