@@ -1,8 +1,9 @@
 import React from "react";
+import { Component, useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import TopBar from "./comp/TopBar";
-import LogIn from "./comp/LogIn";
+import SignCard from "./comp/SignCard";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <TopBar />
         <Switch>
           <Route exact path="/">
-            <LogIn />
+            <SignCard />
           </Route>
           <Route exact path="/users/:id">
             {/* <Search /> */}
