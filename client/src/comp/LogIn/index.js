@@ -6,11 +6,16 @@ import Container from "react-bootstrap/Container";
 import "./Login.css";
 
 function LogIn() {
+  const signUpToggle = e => {
+    e.preventDefault();
+    this.props.start = true;
+  };
+
   return (
     <Container>
       <Card>
         <Card.Body>
-          <Form>
+          <Form onClick={signUpToggle}>
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
               <Form.Control type="email" placeholder="Enter email" />
@@ -27,7 +32,7 @@ function LogIn() {
               Submit
             </Button>
             <Button variant="secondary" type="signup" size="xl">
-              Signup
+              Sign Up
             </Button>
           </Form>
         </Card.Body>
