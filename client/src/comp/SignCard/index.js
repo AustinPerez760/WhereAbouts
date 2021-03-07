@@ -4,16 +4,15 @@ import Signup from "../Signup/";
 import LogIn from "../LogIn";
 
 function SignCard(){
+    const [signUpLoad, setState] = useState (false);
 
-    const [state, setState] = useState ({start: false});
-
-    if (state.start === false){
+    if (signUpLoad === false){
         return (
-            <LogIn state={state}/>
+            <LogIn signInScreen={setState}/>
         );
     } else {
         return (
-            <Signup state={state}/>
+            <Signup signInScreen={setState}/>
         );
     };
 };
