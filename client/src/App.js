@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import TopBar from "./comp/TopBar";
 import SignCard from "./comp/SignCard";
+import About from "./comp/About";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
           </Route>
           <Route exact path="/users/:id">
             {/* <Search /> */}
+          </Route>
+          <Route exact path="/about">
+            <About />
           </Route>
         </Switch>
       </div>
