@@ -8,7 +8,7 @@ import "./Login.css";
 function LogIn({ signInScreen }) {
   return (
     <Container>
-      <Card>
+      <Card className="login-card">
         <Card.Body>
           <Form>
             <Form.Group controlId="formBasicEmail">
