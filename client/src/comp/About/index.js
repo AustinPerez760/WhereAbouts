@@ -4,16 +4,16 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/Container";
 
-function Search() {
+function About() {
   return (
     <Container>
       <Card className="login-card">
         <Card.Body>
-          <h1>Search</h1>
+          <h1>About</h1>
         </Card.Body>
       </Card>
     </Container>
   );
 }
 
-export default Search;
+export default About;
