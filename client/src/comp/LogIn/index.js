@@ -5,7 +5,7 @@ import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/Container";
 import "./Login.css";
 
-function LogIn({signInScreen}) {
+function LogIn({ signInScreen }) {
   return (
     <Container>
       <Card>
@@ -26,10 +26,15 @@ function LogIn({signInScreen}) {
             <Button variant="primary" type="submit" size="xl">
               Submit
             </Button>
-            <Button variant="secondary" type="signup" size="xl" onClick={(e) => {
-              e.preventDefault();
-              signInScreen(true);
-              }}>
+            <Button
+              variant="secondary"
+              type="signup"
+              size="xl"
+              onClick={(e) => {
+                e.preventDefault();
+                signInScreen(true);
+              }}
+            >
               Sign Up
             </Button>
           </Form>
