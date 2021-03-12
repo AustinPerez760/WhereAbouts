@@ -1,3 +1,17 @@
-.search-bar{
-    margin-left: 4rem;
+.search-bar {
+  margin-left: 2rem;
+}
+button.btn.btn-outline-success {
+  background-color: rgb(196, 73, 0);
+  color: white;
+  border: white;
+}
+
+input.mr-sm-2.form-control {
+  background-color: rgb(24, 58, 55);
+  border: rgb(24, 58, 55);
+}
+
+.navbar-dark .navbar-nav a.nav-link {
+  color: rgb(196, 73, 0);
 }

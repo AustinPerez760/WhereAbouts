@@ -3,6 +3,38 @@
 }
 
 .login-card {
-    margin-top: 10rem;
-    margin-bottom: auto;
+  margin-top: 10rem;
+  margin-bottom: auto;
+}
+
+div {
+  background-color: rgb(4, 21, 31);
+}
+
+.card-body {
+  background-color: rgb(24, 58, 55);
+  border: tomato;
+}
+
+.form-group {
+  background-color: rgb(24, 58, 55);
+}
+
+.form-label {
+  background-color: rgb(24, 58, 55);
+  color: rgb(196, 73, 0);
+}
+
+#formBasicEmail {
+  background: white;
+}
+
+#formBasicPassword {
+  background: white;
+}
+
+.btn-primary.btn-xl {
+  background-color: rgb(196, 73, 0);
+  color: white;
+  border: white;
 }
