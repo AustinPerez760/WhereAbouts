@@ -9,17 +9,14 @@ import "./TopBar.css";
 
 function TopBar() {
   return (
-    <Navbar
-      bg="dark"
-      className=" justify-content-between"
-      variant="dark"
-      expand="lg"
-    >
+    <Navbar className="justify-content-between" variant="dark" expand="lg">
       <Navbar.Brand href="#home">WhereAbouts</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
+          <Nav.Link className="home" href="#home">
+            Home
+          </Nav.Link>
           <Nav.Link href="#about">About</Nav.Link>
         </Nav>
         <Form style={{ flex: 1 }}>

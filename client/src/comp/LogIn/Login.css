@@ -13,6 +13,7 @@ div {
 
 .card-body {
   background-color: rgb(24, 58, 55);
+  border: tomato;
 }
 
 .form-group {
@@ -35,4 +36,5 @@ div {
 .btn-primary.btn-xl {
   background-color: rgb(196, 73, 0);
   color: white;
+  border: white;
 }
