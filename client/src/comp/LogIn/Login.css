@@ -1,5 +1,5 @@
 .btn-xl {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 .login-card {
@@ -37,4 +37,13 @@ div {
   background-color: rgb(196, 73, 0);
   color: white;
   border: white;
+  font-family: "Voces", cursive;
+}
+
+.btn-secondary.btn-xl {
+  font-family: "Voces", cursive;
+}
+
+label.form-label {
+  font-family: "Voces", cursive;
 }

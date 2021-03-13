@@ -5,6 +5,7 @@ button.btn.btn-outline-success {
   background-color: rgb(196, 73, 0);
   color: white;
   border: white;
+  font-family: "Megrim", cursive;
 }
 
 input.mr-sm-2.form-control {
@@ -14,4 +15,16 @@ input.mr-sm-2.form-control {
 
 .navbar-dark .navbar-nav a.nav-link {
   color: rgb(196, 73, 0);
+}
+.navbar-brand {
+  font-family: "Megrim", cursive;
+  color: rgb(196, 73, 0);
+}
+
+a.home.nav-link {
+  font-family: "Voces", cursive;
+}
+
+a.nav-link {
+  font-family: "Voces", cursive;
 }
