@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/Container";
 import Modal from "react-bootstrap/Modal";
+import { Redirect } from "react-router-dom";
 import "./Signup.css";
 
 function Signup({ signInScreen }) {
@@ -35,7 +36,7 @@ function Signup({ signInScreen }) {
           password: userData.password,
         }),
       })
-        .then(window.location.reload())
+        .then(<Redirect to="Home" />)
         .catch(handleLoginErr);
     }
 
