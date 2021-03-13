@@ -4,6 +4,11 @@ const router = require("express").Router();
 
 router.post("/api/login", passport.authenticate("local"), function (req, res) {
   res.json(req.user);
+  // if (req.user) {
+  //   res.json({ isAuth: true });
+  // } else {
+  //   res.json({ isAuth: false });
+  // }
 });
 
 router.post("/api/signup", function (req, res) {
