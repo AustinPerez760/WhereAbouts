@@ -5,6 +5,7 @@ import "./App.css";
 import TopBar from "./comp/TopBar";
 import SignCard from "./comp/SignCard";
 import About from "./comp/About";
+import Home from "./comp/Home";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route exact path="/about">
             <About />
+          </Route>
+          <Route exact path="/home">
+            <Home />
           </Route>
         </Switch>
       </div>

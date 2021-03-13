@@ -46,4 +46,5 @@ div {
 
 label.form-label {
   font-family: "Voces", cursive;
+  border: rgb(4, 21, 31), solid;
 }
