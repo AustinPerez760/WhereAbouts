@@ -28,3 +28,8 @@ a.home.nav-link {
 a.nav-link {
   font-family: "Voces", cursive;
 }
+
+.bi-house-fill {
+  margin-right: 2px;
+  margin-bottom: 3px;
+}
