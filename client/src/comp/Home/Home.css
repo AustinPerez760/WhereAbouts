@@ -1,0 +1,16 @@
+#home-card {
+  background-color: red;
+}
+
+.home-row {
+  text-align: center;
+  background-color: black;
+  color: cadetblue;
+  margin-top: 1rem;
+  border: solid 1px rgb(196, 73, 0);
+}
+
+.adventure-card {
+  color: rgb(196, 73, 0);
+  background-color: red;
+}
