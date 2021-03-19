@@ -3,6 +3,7 @@ import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import MapBox from "../MapBox";
 import "./Home.css";
 
 function Home({ signInScreen }) {
@@ -18,6 +19,9 @@ function Home({ signInScreen }) {
         <Col>Share</Col>
       </Row>
     </Container>
+    <div className="main-wrapper">
+      <MapBox />
+    </div>
   );
 }
 
