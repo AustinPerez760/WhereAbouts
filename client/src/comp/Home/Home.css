@@ -1,16 +1,28 @@
 #home-card {
-  background-color: red;
 }
 
 .home-row {
+  font-family: "Megrim", cursive;
+  font-size: 20px;
+  font-weight: bold;
   text-align: center;
-  background-color: black;
-  color: cadetblue;
+  background-color: rgb(24, 58, 55);
+  color: rgb(196, 73, 0);
   margin-top: 1rem;
-  border: solid 1px rgb(196, 73, 0);
+  border: solid 1px rgb(87, 136, 133);
+  border-radius: 5px;
 }
 
-.adventure-card {
-  color: rgb(196, 73, 0);
-  background-color: red;
+.adventure-card.card {
+  font-family: "Voces", cursive;
+  font-size: 14px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(48, 87, 84);
+  border: 2px solid rgb(87, 136, 133);
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
+
+/* 40,73,70 */
