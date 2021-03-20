@@ -1,0 +1,14 @@
+.stopNames{
+    font-family: "Voces", cursive;
+    font-size: 1rem;
+}
+
+.showMap{
+    margin-right: 0.3rem;
+}
+
+#noMargin{
+    margin: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
