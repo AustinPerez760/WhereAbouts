@@ -4,11 +4,10 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/Container";
 import Modal from "react-bootstrap/Modal";
-import { Redirect } from "react-router-dom";
 import axios from "axios";
 import "./Login.css";
 
-function LogIn({ signInScreen, setAuth }) {
+function LogIn({ signInScreen, setAuth, setUsername }) {
   const [show, setShow] = useState(false);
 
   const [showLoginError, setShowLoginError] = useState(false);
@@ -51,8 +50,10 @@ function LogIn({ signInScreen, setAuth }) {
         // })
         .then((res) => {
           console.log("Login Sucessful", res);
+
           if (res.statusText) {
             setAuth(true);
+            setUsername(userData.email);
           }
         })
         .catch(function (err) {

@@ -34,4 +34,13 @@ router.get("/api/user_data", function (req, res) {
   }
 });
 
+router.post("/api/addLocation", function (req, res) {
+  console.log(req.body);
+  // db.User.findOne({
+  //   where:{
+  //     email:req
+  //   }
+  // });
+});
+
 module.exports = router;

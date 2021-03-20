@@ -21,21 +21,25 @@ const Wrapper = styled.main`
 `;
 
 class MapBox extends Component {
-  state = {
-    mapApiLoaded: false,
-    mapInstance: null,
-    mapApi: null,
-    geoCoder: null,
-    places: [],
-    center: [],
-    zoom: 9,
-    address: "",
-    draggable: true,
-    lat: null,
-    lng: null,
-    landmarks: [],
-    landmarkInfo: [],
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      mapApiLoaded: false,
+      mapInstance: null,
+      mapApi: null,
+      geoCoder: null,
+      places: [],
+      center: [],
+      zoom: 9,
+      address: "",
+      draggable: true,
+      lat: null,
+      lng: null,
+      landmarks: [],
+      landmarkInfo: [],
+      personalList: [],
+    };
+  }
 
   componentWillMount() {
     this.setCurrentLocation();
@@ -207,6 +211,14 @@ class MapBox extends Component {
   // }
   // }
 
+  addToList(event) {
+    console.log(event.target);
+    // const personal;
+    // this.setState({ personalList: [...array] });
+    // this.state.personalList.push(event.target.dataset.xid);
+    // console.log(this.state.personalList);
+  }
+
   _createCardsUI() {
     var landmarks = this.state.landmarks;
 
@@ -224,10 +236,10 @@ class MapBox extends Component {
     return landmarksFiltered.map((el) => (
       <ListGroup.Item key={el.id}>
         <Row>
-          <Col md={6}>
+          <Col md={7}>
             <h5 className="stopNames">{el.properties.name}</h5>
           </Col>
-          <Col md={6} id="noMargin">
+          <Col md={5} id="noMargin">
             <Button
               variant="secondary"
               className="showMap"
@@ -235,9 +247,18 @@ class MapBox extends Component {
               data-coordinatex={el.geometry.coordinates[1]}
               onClick={(event) => this.showOnMap(event)}
             >
-              Show on Map
+              Show
             </Button>
-            <Button>Add to List</Button>
+            <Button
+              data-xid={el.id}
+              data-coordinatey={el.geometry.coordinates[0]}
+              data-coordinatex={el.geometry.coordinates[1]}
+              onClick={(event) => {
+                this.addToList(event);
+              }}
+            >
+              Add to List
+            </Button>
           </Col>
         </Row>
       </ListGroup.Item>
@@ -296,7 +317,7 @@ class MapBox extends Component {
               <Card className="adventure-card">
                 <dl>
                   <dt>Yosemite</dt>
-                  <dd> Austin , Nicole, Pebbles</dd>
+                  <dd>Austin , Nicole, Pebbles</dd>
                   <dt>Coast Trip</dt>
                   <dd>Victor, Peter, Brian</dd>
                   <dt>Big Sur</dt>
@@ -304,8 +325,10 @@ class MapBox extends Component {
                 </dl>
               </Card>
             </Col>
-            <Col>Stops</Col>
-            <ListGroup className="results">{this._createCardsUI()}</ListGroup>
+            <Col md={6}>
+              Stops
+              <ListGroup className="results">{this._createCardsUI()}</ListGroup>
+            </Col>
             <Col>Share</Col>
             <Card className="adventure-card"></Card>
           </Row>

@@ -19,7 +19,7 @@ function TopBar() {
           </Nav.Link>
           <Nav.Link href="about">About</Nav.Link>
         </Nav>
-        <Form style={{ flex: 1 }}>
+        {/* <Form style={{ flex: 1 }}>
           <Form.Row className="mx-auto">
             <Col xs={9} className="search-bar">
               <FormControl
@@ -32,7 +32,7 @@ function TopBar() {
               Search
             </Button>
           </Form.Row>
-        </Form>
+        </Form> */}
       </Navbar.Collapse>
     </Navbar>
   );
