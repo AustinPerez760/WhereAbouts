@@ -5,6 +5,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
 
 import GoogleMapReact from "google-map-react";
 
@@ -83,6 +84,20 @@ class MapBox extends Component {
       lng: place.geometry.location.lng(),
     });
     this._generateAddress();
+  };
+
+  showOnMap = (event) => {
+    const latitude = Number(event.target.dataset.coordinatex);
+    const longitude = Number(event.target.dataset.coordinatey);
+    this.setState({
+      center: {
+        lat: latitude,
+        lng: longitude,
+      },
+      lat: latitude,
+      lng: longitude,
+      zoom: 13,
+    });
   };
 
   _generateAddress() {
@@ -194,8 +209,38 @@ class MapBox extends Component {
 
   _createCardsUI() {
     var landmarks = this.state.landmarks;
-    return landmarks.map((el) => (
-      <ListGroup.Item key={el.id}>{el.properties.name}</ListGroup.Item>
+
+    var landmarksNoRepeat = Object.values(
+      landmarks.reduce((unique, o) => {
+        if (!unique[o.properties.name]) unique[o.properties.name] = o;
+        return unique;
+      }, {})
+    );
+
+    var landmarksFiltered = landmarks.filter((array) => {
+      return array.properties.name != "";
+    });
+
+    return landmarksFiltered.map((el) => (
+      <ListGroup.Item key={el.id}>
+        <Row>
+          <Col md={6}>
+            <h5 className="stopNames">{el.properties.name}</h5>
+          </Col>
+          <Col md={6} id="noMargin">
+            <Button
+              variant="secondary"
+              className="showMap"
+              data-coordinatey={el.geometry.coordinates[0]}
+              data-coordinatex={el.geometry.coordinates[1]}
+              onClick={(event) => this.showOnMap(event)}
+            >
+              Show on Map
+            </Button>
+            <Button>Add to List</Button>
+          </Col>
+        </Row>
+      </ListGroup.Item>
     ));
   }
 
