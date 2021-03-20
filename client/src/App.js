@@ -29,7 +29,7 @@ function App() {
 
   return (
     <Router>
-      <div>
+      <div id="appDiv">
         <TopBar />
         <Switch>
           <Route exact path="/">
