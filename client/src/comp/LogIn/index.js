@@ -66,7 +66,6 @@ function LogIn({ signInScreen, setAuth, setUsername }) {
     }
   }
 
-  // loginUser does a post to our "api/login" route and if successful, redirects us the the members page
 
   return (
     <Container className="main-container">
