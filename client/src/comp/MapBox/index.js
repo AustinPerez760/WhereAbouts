@@ -213,6 +213,7 @@ class MapBox extends Component {
 
   addToList(event) {
     console.log(event.target);
+    console.log(this.props.username);
     // const personal;
     // this.setState({ personalList: [...array] });
     // this.state.personalList.push(event.target.dataset.xid);

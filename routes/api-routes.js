@@ -18,11 +18,6 @@ router.post("/api/signup", function (req, res) {
   });
 });
 
-router.get("/logout", function (req, res) {
-  req.logout();
-  res.redirect("/");
-});
-
 router.get("/api/user_data", function (req, res) {
   if (!req.user) {
     res.json({});
@@ -32,6 +27,10 @@ router.get("/api/user_data", function (req, res) {
       id: req.user.id,
     });
   }
+});
+
+router.get("/logout", (req, res) => {
+  req.logout();
 });
 
 router.post("/api/addLocation", function (req, res) {
