@@ -9,7 +9,7 @@ import "./Home.css";
 function Home({ signInScreen }) {
   return (
     <Container className="main-container">
-      <Card id="home-card" bg={"danger"}>
+      <Card id="home-card">
         <div className="main-wrapper">
           <MapBox />
         </div>
@@ -28,8 +28,13 @@ function Home({ signInScreen }) {
             </dl>
           </Card>
         </Col>
-        <Col>Stops</Col>
-        <Card className="adventure-card"> </Card>
+        <Col>
+          Stops
+          <Card className="adventure-card">
+            THIS CARD WILL BE HOME TO THE RESUTLS OF THE USERS SEARCH IM THE MAP
+            ABOVE
+          </Card>
+        </Col>
         <Col>Share</Col>
         <Card className="adventure-card"></Card>
       </Row>
