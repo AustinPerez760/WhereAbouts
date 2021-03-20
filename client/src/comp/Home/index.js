@@ -30,10 +30,7 @@ function Home({ signInScreen }) {
         </Col>
         <Col>
           Stops
-          <Card className="adventure-card">
-            THIS CARD WILL BE HOME TO THE RESUTLS OF THE USERS SEARCH IM THE MAP
-            ABOVE
-          </Card>
+          <Card className="adventure-card"></Card>
         </Col>
         <Col>Share</Col>
         <Card className="adventure-card"></Card>
