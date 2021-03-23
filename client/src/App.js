@@ -15,12 +15,11 @@ import axios from "axios";
 
 function App() {
   const [isAuth, setAuth] = useState(false);
+  const [userEmail, setUserEmail] = useState("");
 
   // useEffect(() => {
-  //   axios.post("/api/login").then((res) => {
-  //     setAuth(res.isAuth);
-  //   });
-  // }, [isAuth]);
+  //   console.log("*******Top PROPS", userEmail);
+  // });
 
   const setAuthentication = (isAuth) => {
     console.log("******", isAuth);
@@ -34,19 +33,19 @@ function App() {
         <Switch>
           <Route exact path="/">
             {isAuth ? (
-              <Redirect to="/about" />
+              <Redirect to="/home" />
             ) : (
-              <SignCard setAuth={setAuthentication} />
+              <SignCard
+                setAuth={setAuthentication}
+                setUsername={setUserEmail}
+              />
             )}
-          </Route>
-          <Route exact path="/users/:id">
-            {/* <Search /> */}
           </Route>
           <Route exact path="/about">
             <About />
           </Route>
           <Route exact path="/home">
-            <Home />
+            <Home username={userEmail} />
           </Route>
         </Switch>
       </div>

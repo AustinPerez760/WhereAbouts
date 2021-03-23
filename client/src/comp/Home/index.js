@@ -6,11 +6,11 @@ import Container from "react-bootstrap/esm/Container";
 import MapBox from "../MapBox";
 import "./Home.css";
 
-function Home({ signInScreen }) {
+function Home({ username }) {
   return (
     <Container className="main-container">
       <div className="main-wrapper">
-        <MapBox />
+        <MapBox username={username} />
       </div>
       {/* //   <Row className="home-row">
     //     <Col>
