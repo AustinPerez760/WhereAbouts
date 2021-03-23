@@ -1,7 +1,7 @@
 # WhereAbouts - Your Traveling Pal ✈️
-WhereAbouts is an application to make your travel planning clear and painless. Just put all sights to your trip and organize it day by day, spending time wisely, deciding where to stay en route and keeping useful notes.
+WhereAbouts is an application to make your travel planning clear and painless. Just put all of your ideas into your trip and organize it day by day, spending the time wisely, deciding where to stay en route and keeping useful notes.
 
-Not ready to travel right now, but heard about a great place you must see before you die? Put it on a wishlist and do it later!
+Not ready to travel right now, but heard about a great place you must see before you die!? Put it on a wishlist and do it later!!
 
 This application is great for world discoverers: everybody who loves to explore new places in distant lands, can’t live without adventures or just wants to have a rest with family on the weekend not so far from home. ✨
 
