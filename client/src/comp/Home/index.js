@@ -1,8 +1,8 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
+// import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/esm/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
 import MapBox from "../MapBox";
 import "./Home.css";
 
