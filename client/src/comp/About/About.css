@@ -1,0 +1,86 @@
+h1 {
+  text-align: center;
+  color: white;
+  padding: 5px;
+}
+
+h6 {
+  font-size: 16px;
+  text-align: left;
+}
+
+a {
+  font-family: "Cuprum", sans-serif;
+  font-weight: bold;
+}
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+p {
+  color: white;
+}
+
+col {
+  background-color: white;
+}
+
+.card-title {
+  color: white;
+}
+/* .sec1 {
+  background-color: var(--mainColor);
+  border-bottom: 1px solid var(--borderColor);
+  overflow: auto;
+}
+
+.left-column {
+  grid-area: left-column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.right-column {
+  grid-area: right-column;
+  display: grid;
+  align-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.post-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 320px);
+  gap: 20px;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 180px;
+  display: block;
+  object-fit: cover;
+}
+
+.post-preview {
+  background-color: white;
+  padding: 15px;
+}
+
+.post-title {
+  color: black;
+  margin: 0;
+}
+
+.post-intro {
+  font-size: 14px;
+  color: slategrey;
+}
+
+.post {
+  border: 1px solid var(--borderColor);
+} */
