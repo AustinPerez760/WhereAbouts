@@ -4,10 +4,6 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/Container";
 import Modal from "react-bootstrap/Modal";
-<<<<<<< HEAD
-// import { Redirect } from "react-router-dom";
-=======
->>>>>>> 9f7b00df212354037b5fefa11e9d184bb073c3d9
 import axios from "axios";
 import "./Login.css";
 
